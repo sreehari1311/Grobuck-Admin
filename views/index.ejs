@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>Grocery-Admin</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="/stylesheets/fixed-data-table.min.css" rel="stylesheet" />
+    <link href="/libraries/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+      var userid = "<%=userid%>";
+      function getStore(){
+      	return "LuLu";
+      }
+
+
+    </script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .row{
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+
+        }
+    	.navbar-default {
+    		background-color: white;
+    	}
+    	.navbar-nav{
+			background-color: white;
+    	}
+    	.item-card {
+    display: inline-block;
+    position: relative;
+    width: 206px;
+    height: 336px;
+    vertical-align: top;
+    background: #fff;
+    border: 1px solid #e5edec;
+    text-align: left;
+    color: #5a5a5a;
+    font-weight: 400;
+    margin: 0 -1px -1px 0;
+    cursor: pointer;
+    white-space: initial;
+}
+.media {
+    margin-top: 15px;
+}
+
+.item-card .media .item-image {
+    width: 20vw;
+    height: 20vw;
+}
+.item-card .media .item-image {
+    display: block;
+    width: 155px;
+    height: 155px;
+    margin: 10px auto;
+}
+
+.no-aliasing-image {
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 155px;
+    height: 155px;
+     
+}
+img {
+    max-width: 100%;
+    width: auto\9;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+.item-card .item-name .full-item-name {
+    max-height: 55px;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+    line-height: 1.4em;
+}
+.item-name {
+    line-height: 1.5em;
+    margin-bottom: 4px;
+    margin-left: 10px;
+}
+.container {
+     
+}
+
+
+
+
+.carousel-control     		 { width:  4%; }
+.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
+@media (max-width: 767px) {
+	.carousel-inner .active.left { left: -100%; }
+	.carousel-inner .next        { left:  100%; }
+	.carousel-inner .prev		 { left: -100%; }
+	.active > div { display:none; }
+	.active > div:first-child { display:block; }
+
+}
+@media (min-width: 767px) and (max-width: 992px ) {
+	.carousel-inner .active.left { left: -50%; }
+	.carousel-inner .next        { left:  50%; }
+	.carousel-inner .prev		 { left: -50%; }
+	.active > div { display:none; }
+	.active > div:first-child { display:block; }
+	.active > div:first-child + div { display:block; }
+}
+@media (min-width: 992px ) {
+	.carousel-inner .active.left { left: -16.7%; }
+	.carousel-inner .next        { left:  16.7%; }
+	.carousel-inner .prev		 { left: -16.7%; }	
+}
+
+
+
+
+    </style>
+</head>
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" style="background-color:#F8F8F8">
+	<div id="content">
+	</div>
+    
+  <script src="/libraries/jquery/jquery.min.js"></script>
+  <script src="/libraries/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/javascripts/build/app.js"></script>
+
+</body>
+
+</html>
+ 
